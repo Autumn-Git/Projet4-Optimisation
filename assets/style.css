@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+.header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,7 +18,7 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+.header .name {
 	font-size: 26px;
 }
 
@@ -79,13 +79,14 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
+#about-me .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
 	font-style: italic;
-	width: 60%;
+    font-weight: 800;
+    width: 60%;
+    font-size: 1rem;
 }
-#about-me p {
+#about-me .about-me__content{
 	width: 80%;
 	font-size: 14px;
 }
@@ -95,6 +96,7 @@ body {
 }
 .title{
 	text-align: center;
+	font-size: 1.75rem;
 	padding-block: 2em;
 }
 .gallery .nav {
@@ -121,7 +123,7 @@ body {
 }
 .gallery-item {
 	position: absolute;
-	width: 465px;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
@@ -144,9 +146,13 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
-	font-style: italic;
-	font-weight: 300;
+    font-family: Spectral;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
 
 }
 .quote__author {
@@ -189,7 +195,11 @@ body {
 	justify-content: space-between;
 	z-index: 1;
 }
-
+.price{
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+}
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
@@ -214,6 +224,9 @@ body {
 .form-container {
 	flex : 2;
 
+}
+.title-contact{
+	font-size: 1.75rem;
 }
 form {
 	display: flex;
@@ -320,15 +333,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	.header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.header .nav, .header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	.header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
