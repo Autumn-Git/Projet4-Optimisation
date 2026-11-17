@@ -1,3 +1,4 @@
+$(".gallery").hide();
 (function($) {
 
   /* dzjojz */
